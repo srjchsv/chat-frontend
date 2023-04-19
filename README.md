@@ -13,6 +13,3 @@ Backend:
 - [auth-service](https://github.com/srjchsv/auth-service): go, gin-gonic, postgres, gorm, jwt
 - [chat-service](https://github.com/srjchsv/chat-service): go, gin-gonic, postgres, gorm, jwt, confluent-kafka, gorilla websocket
 - [notifications-service](https://github.com/srjchsv/notifications-service): go, echo, gorilla websocket, confluent-kafka
-
-To run use `./run.sh dev`
-For first run use `npm i`
