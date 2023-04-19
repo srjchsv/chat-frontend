@@ -10,7 +10,7 @@ function Login() {
 
   async function handleSubmit(event) {
     event.preventDefault();
-
+    console.log(process.env.AUTH_URL);
     try {
       const response = await fetch(`http://${process.env.AUTH_URL}/login`, {
         method: "POST",

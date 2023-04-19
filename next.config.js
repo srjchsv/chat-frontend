@@ -5,8 +5,8 @@ const nextConfig = {
 
 module.exports = {
   env: {
-    AUTH_URL: "localhost:8080",
-    CHAT_URL: "localhost:8000/api/v1",
-    NOTIFICATIONS_URL: "localhost:1232",
+    AUTH_URL: process.env.AUTH_URL,
+    CHAT_URL: process.env.CHAT_URL,
+    NOTIFICATIONS_URL: process.env.NOTIFICATIONS_URL,
   },
 };

@@ -116,34 +116,39 @@ function Chat() {
   };
 
   return (
-    <div className={styles.chat}>
-      <div className={styles.messages}>
-        {messages.map((message, index) => (
-          <div
-            key={index}
-            className={`${styles.message} ${
-              message.sender_username === username
-                ? styles.currentUserMessage
-                : ""
-            }`}
-          >
-            <strong>{message.sender_username}: </strong>
-            {message.content}
+    <div>
+      {/* <div className={styles.hostname}>
+        <h3>Connected to container: {process.env.HOSTNAME}</h3>
+      </div> */}
+      <div className={styles.chat}>
+        <div className={styles.messages}>
+          {messages.map((message, index) => (
+            <div
+              key={index}
+              className={`${styles.message} ${
+                message.sender_username === username
+                  ? styles.currentUserMessage
+                  : ""
+              }`}
+            >
+              <strong>{message.sender_username}: </strong>
+              {message.content}
+            </div>
+          ))}
+        </div>
+        <div className={styles.inputWrapper}>
+          <div className={styles.inputContainer}>
+            <input
+              type="text"
+              value={newMessage}
+              onChange={handleInputChange}
+              onKeyDown={handleKeyDown}
+              className={styles.chatInput}
+            />
+            <button onClick={sendMessage} className={styles.chatButton}>
+              Send
+            </button>
           </div>
-        ))}
-      </div>
-      <div className={styles.inputWrapper}>
-        <div className={styles.inputContainer}>
-          <input
-            type="text"
-            value={newMessage}
-            onChange={handleInputChange}
-            onKeyDown={handleKeyDown}
-            className={styles.chatInput}
-          />
-          <button onClick={sendMessage} className={styles.chatButton}>
-            Send
-          </button>
         </div>
       </div>
     </div>

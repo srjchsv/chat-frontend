@@ -15,11 +15,3 @@ Backend:
 - [notifications-service](https://github.com/srjchsv/notifications-service): go, echo, gorilla websocket, confluent-kafka
 
 To run the backend services use `make run` command. It will run docker compose if needed and then go.
-
-For frontend use `npm i` and `npm run dev`
-
-To be done (optional):
-
-- Built Docker containers images and push to registry
-- Kubernetes deployment and service yamls
-- Run on k8s cluster
