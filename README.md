@@ -14,4 +14,5 @@ Backend:
 - [chat-service](https://github.com/srjchsv/chat-service): go, gin-gonic, postgres, gorm, jwt, confluent-kafka, gorilla websocket
 - [notifications-service](https://github.com/srjchsv/notifications-service): go, echo, gorilla websocket, confluent-kafka
 
-To run the backend services use `make run` command. It will run docker compose if needed and then go.
+To run use `./run.sh dev`
+For first run use `npm i`
